@@ -222,6 +222,24 @@
       margin: 0;
       padding-left: 20px;
     }
+
+    /* Styling für die Tabelle im 3. Reiter */
+    .standings-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    .standings-table th, .standings-table td {
+      border: 1px solid #e0e0e0;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .standings-table th {
+      background-color: #f8f9fa;
+      font-weight: bold;
+    }
   </style>
 </head>
 
@@ -256,6 +274,7 @@
     <div class="tabs">
       <button class="tab-button active" onclick="openTab(event, 'wettschein')">Wettschein</button>
       <button class="tab-button" onclick="openTab(event, 'ergebnisse')">Ergebnisse</button>
+      <button class="tab-button" onclick="openTab(event, 'tabelle')">Tabelle</button>
     </div>
 
     <div class="form-container">
@@ -335,6 +354,48 @@
           <p><strong>Abgefragtes Rennen:</strong> <span id="resOption">-</span></p>
           <p><strong>Status:</strong> Ergebnisse geladen.</p>
         </div>
+      </div>
+
+      <!-- TAB 3: Tabelle -->
+      <div id="tabelle" class="tab-content">
+        <h2>Gesamttabelle</h2>
+        <p>Aktueller Punktestand der Spieler:</p>
+        <table class="standings-table">
+          <thead>
+            <tr>
+              <th>Platz</th>
+              <th>Spieler</th>
+              <th>Punkte</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <tr>
+              <td>1</td>
+              <td>Thomas</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Alex</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Schorles</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Bernhard</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Corni</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
     </div>
