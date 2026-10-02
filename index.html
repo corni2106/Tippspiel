@@ -42,14 +42,10 @@
 
     .login-logo {
       max-width: 120px;
-      /* Maximale Breite des Bildes */
       height: auto;
-      /* Behält das Seitenverhältnis bei */
       margin-bottom: 15px;
-      /* Abstand nach unten zur Überschrift */
       display: block;
       margin-left: auto;
-      /* Zentriert das Bild */
       margin-right: auto;
     }
 
@@ -82,11 +78,11 @@
       justify-content: space-between;
       align-items: center;
       background-color: #f8f9fa;
-      padding: 10px 15px;
+      padding: 12px 15px;
       border: 1px solid #e0e0e0;
-      border-bottom: none;
-      border-radius: 8px 8px 0 0;
+      border-radius: 8px;
       font-size: 14px;
+      margin-bottom: 20px; /* VERGRÖSSERTER ABSTAND ZU DEN REITERN */
     }
 
     .form-container {
@@ -109,7 +105,7 @@
       background-color: #f1f1f1;
       border: 1px solid #e0e0e0;
       border-bottom: none;
-      border-radius: 0;
+      border-radius: 8px 8px 0 0;
       cursor: pointer;
       font-size: 16px;
       font-weight: bold;
@@ -209,7 +205,6 @@
       border: 1px solid #ccc;
       border-radius: 4px;
       display: none;
-      /* Standardmäßig ausgeblendet */
     }
 
     .summary-box h3 {
@@ -248,7 +243,6 @@
   <!-- Login Overlay -->
   <div id="loginOverlay" class="login-overlay">
     <div class="login-card">
-      <!-- HIER DAS BILD EINFÜGEN -->
       <img src="images/logo.png" alt="Logo" class="login-logo">
       <h2>Anmeldung Wettschein</h2>
       <form id="loginForm">
